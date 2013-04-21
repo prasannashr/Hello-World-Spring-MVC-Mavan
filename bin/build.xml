@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="SpringMaven"  basedir=".">
+
+	<target name="copyFilestoTomcat" description ="Copies Files to Tomcat">
+		<property name="SpringMavenTest_docbase" value="D:\ace-ws\SpringMVC\target\SpringMVC">
+		</property>
+
+		<copy todir="${SpringMavenTest_docbase}\WEB-INF\classes">
+			<fileset dir="target/classes"/>
+		</copy>
+		<copy todir="${SpringMavenTest_docbase}\WEB-INF">
+			<fileset dir="src\main\webapp\WEB-INF" includes="**/*.xml"/>
+		</copy>		
+	 </target>
+</project>
