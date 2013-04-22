@@ -7,7 +7,8 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<context:component-scan base-package="com.ace.amadeus.controller" />
+	<context:component-scan base-package="com.ace.amadeus.controller,com.ace.amadeus.services,com.ace.amadeus.Impl" />
+
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
